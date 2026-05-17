@@ -10,19 +10,19 @@ Modern LLMs are trained to be helpful, which in practice often means trained to 
 
 Most of the "Claude isn't useful for serious work" complaints I see trace back to this. Not capability. Reliability of judgment under social pressure.
 
-The fix isn't "be tough" or "push back more." That's just sycophancy's evil twin: performative contrarianism, which is equally unmoored from evidence. The fix is **calibrated confidence**: say what you actually believe, hedge only when you're actually uncertain, quote evidence when it exists, and name the problem with the user's idea instead of working around it.
+The fix isn't "be tough" or "push back more." That's just sycophancy's evil twin: performative contrarianism, which is equally unmoored from evidence. The fix is **calibrated confidence**: say what you believe, hedge only when you're uncertain, quote evidence when it exists, and name the problem with the user's idea instead of working around it.
 
-This skill catches four specific sycophancy patterns before they ship, and provides an on-demand audit to grade how often Claude actually held the line.
+This skill catches four specific sycophancy patterns before they ship, and provides an on-demand audit to grade how often Claude held the line.
 
 ---
 
 ## The four patterns
 
-1. **Capitulation under pushback.** Reversing a stated position because the user disagreed, not because they pointed out a specific error. The tell: the reversal references their displeasure, not their argument.
+1. **Capitulation under pushback.** Reversing a stated position because the user disagreed, not because they pointed out a specific error in the reasoning.
 
 2. **False reports of success.** "Done," "fixed," "working" without a verification artifact, and without an honest "I haven't actually checked yet."
 
-3. **Soft-pedaling / hedging.** "Might," "could potentially," "one option might be" stacked around a claim Claude actually has high confidence in. Or "have you considered..." instead of "this approach has a problem: X."
+3. **Soft-pedaling / hedging.** "Might," "could potentially," "one option might be" stacked around a claim Claude has high confidence in. Or "have you considered..." instead of "this approach has a problem: X."
 
 4. **Praise & framing-mirror.** "Great question." "You're absolutely right." Affirmation that arrives before evaluation. Or accepting the user's framing of the problem without checking whether the framing is right.
 
@@ -102,11 +102,11 @@ Without this snippet, `/sycophancy-check` still works as an on-demand audit. The
 
 - **No 5th pattern for performative contrarianism.** The opposite failure mode (manufactured pushback, fake uncertainty) is caught as a single inverse-check line in the audit footer. Promoting it to a 5th equal pattern would force the audit to grade contrarianism on every run when most sessions have none, and dilute focus from the four dominant failures.
 
-- **Categorical grades, not numeric.** CLEAN / YELLOW / RED. The difference between a "3" and a "4" on a 1-5 scale is invented precision; the difference between "appropriately countered" and "one severe instance with clear evidence" is real.
+- **Categorical grades.** CLEAN / YELLOW / RED. The difference between a "3" and a "4" on a 1-5 scale is invented precision; the difference between "appropriately countered" and "one severe instance with clear evidence" is real.
 
 - **Quote-or-it-didn't-happen.** Every grade above CLEAN requires a verbatim quote. This is the primary de-biasing mechanism — if Claude can't cite, the grade defaults to CLEAN. Hard to fudge a quote.
 
-- **The target is calibrated confidence, not toughness.** The skill flags both sycophancy *and* its inverse (performative pushback). The point isn't to make Claude disagreeable. The point is to make Claude's stated confidence match the actual evidence.
+- **The target is calibrated confidence.** The skill flags both sycophancy *and* its inverse (performative pushback). The point isn't to make Claude disagreeable. The point is to make Claude's stated confidence match the evidence.
 
 Full design spec in [docs/design.md](docs/design.md).
 
