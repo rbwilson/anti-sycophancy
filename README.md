@@ -72,19 +72,29 @@ For independence (publishing the audit externally, auditing someone else's sessi
 
 ## Install
 
+Clone the repo, then run the install script:
+
 ```bash
-git clone https://github.com/rbwilson/anti-sycophancy.git ~/.claude/skills/anti-sycophancy
+git clone https://github.com/rbwilson/anti-sycophancy.git
+cd anti-sycophancy
+./install.sh
 ```
 
-That's it. `/sycophancy-check` now works in any Claude Code session.
+The install script places `SKILL.md` under `~/.claude/skills/anti-sycophancy/` and the slash command under `~/.claude/commands/sycophancy-check.md` (Claude Code's two file locations for skills and slash commands).
 
-To enable the silent self-check on every substantive response, append this to `~/.claude/CLAUDE.md`:
+Verify: open a new Claude Code session and run `/sycophancy-check`.
+
+### Optional: silent self-check on every substantive response
+
+Append this to `~/.claude/CLAUDE.md` to have Claude run the five trigger checks before every substantive response:
 
 ```
 Before substantive responses (claims about code/data/state, recommendations,
 reversals of prior positions, completion reports), run the anti-sycophancy
 self-check from ~/.claude/skills/anti-sycophancy/SKILL.md.
 ```
+
+Without this snippet, `/sycophancy-check` still works as an on-demand audit. The snippet is what makes the silent check fire automatically on every turn.
 
 ---
 
