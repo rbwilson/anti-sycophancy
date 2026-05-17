@@ -1,6 +1,21 @@
-# anti-sycophancy
+<p align="center">
+  <img src="hero.png" alt="anti-sycophancy — calibrated, not polite" width="100%">
+</p>
 
-A Claude Code skill that catches sycophancy before it shows up in your output, and grades how often it slips through.
+<p align="center">
+  A Claude Code skill that catches sycophancy before it shows up in your output, and grades how often it slips through.
+</p>
+
+<p align="center">
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-1f1f26?style=flat-square">
+  <img alt="Claude Code skill" src="https://img.shields.io/badge/claude%20code-skill-1f1f26?style=flat-square">
+</p>
+
+<p align="center">
+  <a href="SKILL.md">SKILL.md</a>
+  &nbsp;·&nbsp;
+  <a href="docs/design.md">Design notes</a>
+</p>
 
 ---
 
