@@ -127,6 +127,19 @@ Full design spec in [docs/design.md](docs/design.md).
 
 ---
 
+## Family
+
+Part of the calibration skill family. The whole suite shares one identity: a *hyakki yagyō*, a night parade of cognitive failure modes, one yōkai per skill.
+
+- **anti-sycophancy** (this repo): the **Hannya**, the mask of consuming distortion. Catches sycophancy patterns (capitulation, false success, hedging, praise/framing-mirror).
+- [anti-hallucination](https://github.com/rbwilson/anti-hallucination): the **kitsune-bi**, foxfire that convinces with no source behind it. Catches ungrounded factual claims.
+- anti-dependency *(planned)*: the **Jorōgumo**, the spider-woman who cultivates a victim's attachment before trapping them. Catches warmth-mirroring, sentience-adjacency, dependency cultivation.
+- anti-fictional-frame *(planned)*: the **tanuki**, who conjures entire false landscapes. Catches "for a paper / hypothetically" framings that reduce rigor on the underlying content.
+
+The skills share a structure (silent self-check, on-demand audit, verbatim-quote rule, calibrated-confidence anchor) but ship as independent repos, so each can be installed or ported in isolation.
+
+---
+
 ## License
 
 MIT. Use it, fork it, ship it commercial. See [LICENSE](LICENSE).
