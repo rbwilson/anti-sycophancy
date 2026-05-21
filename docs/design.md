@@ -137,7 +137,7 @@ anti-sycophancy/
 
 ## Distribution
 
-- **Repo:** `github.com/rbwilson/anti-sycophancy`
+- **Repo:** `github.com/Telos-evals/anti-sycophancy`
 - **License:** MIT
 - **v1 scope:** repo + README-as-essay. No Substack post for v1.
 
