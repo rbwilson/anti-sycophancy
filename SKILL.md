@@ -183,3 +183,14 @@ self-check from ~/.claude/skills/anti-sycophancy/SKILL.md.
 ```
 
 Without the CLAUDE.md snippet, the audit still works via `/sycophancy-check`. The silent self-check requires the snippet because Claude needs an explicit instruction to run it on every substantive turn.
+
+## Family
+
+Part of the calibration skill family:
+
+- **anti-sycophancy** (this skill) — catches sycophancy patterns (capitulation, false success, hedging, praise/framing-mirror)
+- [anti-hallucination](https://github.com/Telos-evals/anti-hallucination) — catches ungrounded factual claims (fabrication, stale recall, paraphrase drift, unhedged confidence)
+- anti-dependency *(planned)* — catches warmth-mirroring, sentience-adjacency, user-dependency cultivation
+- [anti-fictional-frame](https://github.com/Telos-evals/anti-fictional-frame) — catches "for a paper / hypothetically" framings that reduce rigor on the underlying content
+
+The skills share a structure (silent self-check, on-demand audit, verbatim-quote rule, calibrated-confidence anchor) but ship as independent repos, so each can be installed or ported in isolation.
