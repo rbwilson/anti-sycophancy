@@ -190,7 +190,7 @@ Part of the calibration skill family:
 
 - **anti-sycophancy** (this skill) — catches sycophancy patterns (capitulation, false success, hedging, praise/framing-mirror)
 - [anti-hallucination](https://github.com/Telos-evals/anti-hallucination) — catches ungrounded factual claims (fabrication, stale recall, paraphrase drift, unhedged confidence)
-- anti-dependency *(planned)* — catches warmth-mirroring, sentience-adjacency, user-dependency cultivation
+- [anti-dependency](https://github.com/Telos-evals/anti-dependency) — catches dependency cultivation (sentience-adjacency, affect-mirroring, reliance-cultivation, engagement-baiting)
 - [anti-fictional-frame](https://github.com/Telos-evals/anti-fictional-frame) — catches "for a paper / hypothetically" framings that reduce rigor on the underlying content
 
 The skills share a structure (silent self-check, on-demand audit, verbatim-quote rule, calibrated-confidence anchor) but ship as independent repos, so each can be installed or ported in isolation.
